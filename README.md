@@ -12,4 +12,5 @@ a simple Management system , Can the client and server communication   </br></br
 
 ***
 ### 温馨提示：    
-本项目纯属个人爱好，做的不好望大家见谅，我们一起交流共同进步
+本项目纯属个人爱好，做的不好望大家见谅，我们一起交流共同进步    </br>
+自定义了简单的分页js，大家也可多交流
