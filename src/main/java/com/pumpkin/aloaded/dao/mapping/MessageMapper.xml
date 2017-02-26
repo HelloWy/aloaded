@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.MessageMapper">
+	<resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Message">
+		<!-- WARNING - @mbggenerated -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="userid" jdbcType="INTEGER" property="userid" />
+		<result column="username" jdbcType="VARCHAR" property="username" />
+		<result column="adminid" jdbcType="INTEGER" property="adminid" />
+		<result column="adminname" jdbcType="VARCHAR" property="adminname" />
+		<result column="createtime" jdbcType="VARCHAR" property="createtime" />
+		<result column="replytime" jdbcType="VARCHAR" property="replytime" />
+		<result column="clothesname" jdbcType="VARCHAR" property="clothesname" />
+		<result column="size" jdbcType="VARCHAR" property="size" />
+		<result column="changesize" jdbcType="VARCHAR" property="changesize" />
+		<result column="userphone" jdbcType="VARCHAR" property="userphone" />
+		<result column="context" jdbcType="VARCHAR" property="context" />
+		<result column="adminphone" jdbcType="VARCHAR" property="adminphone" />
+		<result column="replycontext" jdbcType="VARCHAR" property="replycontext" />
+		<result column="isdo" jdbcType="VARCHAR" property="isdo" />
+	</resultMap>
+	<select id="queryForDescList" resultMap="BaseResultMap">
+		select * from message
+		order by createtime desc
+	</select>
+</mapper>

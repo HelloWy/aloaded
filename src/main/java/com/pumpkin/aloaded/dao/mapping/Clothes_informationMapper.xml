@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.Clothes_informationMapper" >
+  <resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Clothes_information" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="team" property="team" jdbcType="VARCHAR" />
+    <result column="student_id" property="studentId" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="identity_id" property="identityId" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="qihouqu" property="qihouqu" jdbcType="VARCHAR" />
+    <result column="junbingzhong" property="junbingzhong" jdbcType="VARCHAR" />
+    <result column="danweiqufen" property="danweiqufen" jdbcType="VARCHAR" />
+    <result column="danweileixing" property="danweileixing" jdbcType="VARCHAR" />
+    <result column="zhiwujibie" property="zhiwujibie" jdbcType="VARCHAR" />
+    <result column="xianzhishijian" property="xianzhishijian" jdbcType="VARCHAR" />
+    <result column="junxianjibie" property="junxianjibie" jdbcType="VARCHAR" />
+    <result column="xianxianshijian" property="xianxianshijian" jdbcType="VARCHAR" />
+    <result column="gongzuogangwei" property="gongzuogangwei" jdbcType="VARCHAR" />
+    <result column="gongzuoshijian" property="gongzuoshijian" jdbcType="VARCHAR" />
+    <result column="ruwushijian" property="ruwushijian" jdbcType="VARCHAR" />
+    <result column="tiganshijian" property="tiganshijian" jdbcType="VARCHAR" />
+    <result column="gaixuanshijian" property="gaixuanshijian" jdbcType="VARCHAR" />
+    <result column="zucema" property="zucema" jdbcType="VARCHAR" />
+    <result column="dengjibiaohao" property="dengjibiaohao" jdbcType="VARCHAR" />
+    <result column="shengao" property="shengao" jdbcType="VARCHAR" />
+    <result column="xiongwei" property="xiongwei" jdbcType="VARCHAR" />
+    <result column="yaowei" property="yaowei" jdbcType="VARCHAR" />
+    <result column="touwei" property="touwei" jdbcType="VARCHAR" />
+    <result column="jiaochang" property="jiaochang" jdbcType="VARCHAR" />
+    <result column="tuochang" property="tuochang" jdbcType="VARCHAR" />
+    <result column="daima" property="daima" jdbcType="VARCHAR" />
+    <result column="pingming" property="pingming" jdbcType="VARCHAR" />
+    <result column="haoxing" property="haoxing" jdbcType="VARCHAR" />
+    <result column="beidongleixing" property="beidongleixing" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="selectTeam" resultType="String" >
+   select DISTINCT clothes_information.team FROM clothes_information
+  </select>
+  
+</mapper>

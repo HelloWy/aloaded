@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+		PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
+		<plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+			<property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+			<!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+			<property name="caseSensitive" value="true"/>
+		</plugin>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+						connectionURL="jdbc:mysql://127.0.0.1:3306/clothes"
+						userId="root"
+						password="wywyss">
+		</jdbcConnection>
+		<!-- 生成模型的包名和位置 -->
+		<javaModelGenerator targetPackage="com.pumpkin.aloaded.dao.model" targetProject="E:/WorkSpace/eclipseWorkspace/javaweb/aloaded/src/main/java"/>
+		<!-- 生成的映射文件包名和位置 -->
+		<sqlMapGenerator targetPackage="com.pumpkin.aloaded.dao.mapping"  targetProject="E:/WorkSpace/eclipseWorkspace/javaweb/aloaded/src/main/java"/>
+		<!-- 生成DAO的包名和位置 -->
+		<javaClientGenerator targetPackage="com.pumpkin.aloaded.dao.mapper" targetProject="E:/WorkSpace/eclipseWorkspace/javaweb/aloaded/src/main/java" type="XMLMAPPER" />
+		<table tableName="loadedtype" domainObjectName="LoadedType">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="loadedname" domainObjectName="LoadedName">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="loadedsize" domainObjectName="LoadedSize">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		
+		<!-- 
+		
+		<table tableName="natice" domainObjectName="Natice">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="announcement" domainObjectName="Announcement">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="exchange_info" domainObjectName="Exchange_info">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="femaledayi" domainObjectName="Femaledayi">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="femaleshangyi" domainObjectName="Femaleshangyi">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="femalexiaku" domainObjectName="Femalexiaku">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="hat" domainObjectName="Hat">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="user" domainObjectName="User">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="maledayi" domainObjectName="Maledayi">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="maleshangyi" domainObjectName="Maleshangyi">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="malexiaku" domainObjectName="Malexiaku">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="message" domainObjectName="Message">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="remessage" domainObjectName="Remessage">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="stock" domainObjectName="Stock">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		<table tableName="xiezi" domainObjectName="Xiezi">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+		</table>
+		 -->
+		
+
+	</context>
+</generatorConfiguration>

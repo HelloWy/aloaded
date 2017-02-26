@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.HatMapper">
+  <resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Hat">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="clothesname" jdbcType="VARCHAR" property="clothesname" />
+    <result column="clothesnum" jdbcType="INTEGER" property="clothesnum" />
+    <result column="a53" jdbcType="INTEGER" property="a53" />
+    <result column="a54" jdbcType="INTEGER" property="a54" />
+    <result column="a55" jdbcType="INTEGER" property="a55" />
+    <result column="a56" jdbcType="INTEGER" property="a56" />
+    <result column="a57" jdbcType="INTEGER" property="a57" />
+    <result column="a58" jdbcType="INTEGER" property="a58" />
+    <result column="a59" jdbcType="INTEGER" property="a59" />
+    <result column="a60" jdbcType="INTEGER" property="a60" />
+  </resultMap>
+</mapper>

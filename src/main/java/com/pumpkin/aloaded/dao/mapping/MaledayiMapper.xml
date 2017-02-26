@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.MaledayiMapper">
+  <resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Maledayi">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="clothesname" jdbcType="VARCHAR" property="clothesname" />
+    <result column="clothesnum" jdbcType="INTEGER" property="clothesnum" />
+    <result column="a185b104c108" jdbcType="INTEGER" property="a185b104c108" />
+    <result column="a185b100" jdbcType="INTEGER" property="a185b100" />
+    <result column="a185b92c96" jdbcType="INTEGER" property="a185b92c96" />
+    <result column="a180b104c108" jdbcType="INTEGER" property="a180b104c108" />
+    <result column="a180b100" jdbcType="INTEGER" property="a180b100" />
+    <result column="a180b92c96" jdbcType="INTEGER" property="a180b92c96" />
+    <result column="a175b104c108" jdbcType="INTEGER" property="a175b104c108" />
+    <result column="a175b100" jdbcType="INTEGER" property="a175b100" />
+    <result column="a175b92c96" jdbcType="INTEGER" property="a175b92c96" />
+    <result column="a175b88" jdbcType="INTEGER" property="a175b88" />
+    <result column="a170b104c108" jdbcType="INTEGER" property="a170b104c108" />
+    <result column="a170b100" jdbcType="INTEGER" property="a170b100" />
+    <result column="a170b92c96" jdbcType="INTEGER" property="a170b92c96" />
+    <result column="a170b88" jdbcType="INTEGER" property="a170b88" />
+    <result column="a165b100" jdbcType="INTEGER" property="a165b100" />
+    <result column="a165b92c96" jdbcType="INTEGER" property="a165b92c96" />
+    <result column="a165b84c88" jdbcType="INTEGER" property="a165b84c88" />
+  </resultMap>
+</mapper>

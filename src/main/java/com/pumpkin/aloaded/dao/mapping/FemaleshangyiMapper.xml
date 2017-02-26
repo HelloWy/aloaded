@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.FemaleshangyiMapper">
+  <resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Femaleshangyi">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="clothesname" jdbcType="VARCHAR" property="clothesname" />
+    <result column="clothesnum" jdbcType="INTEGER" property="clothesnum" />
+    <result column="a175b88" jdbcType="INTEGER" property="a175b88" />
+    <result column="a170b96" jdbcType="INTEGER" property="a170b96" />
+    <result column="a170b92" jdbcType="INTEGER" property="a170b92" />
+    <result column="a170b88" jdbcType="INTEGER" property="a170b88" />
+    <result column="a170b84" jdbcType="INTEGER" property="a170b84" />
+    <result column="a170b80" jdbcType="INTEGER" property="a170b80" />
+    <result column="a165b100" jdbcType="INTEGER" property="a165b100" />
+    <result column="a165b96" jdbcType="INTEGER" property="a165b96" />
+    <result column="a165b92" jdbcType="INTEGER" property="a165b92" />
+    <result column="a165b88" jdbcType="INTEGER" property="a165b88" />
+    <result column="a165b84" jdbcType="INTEGER" property="a165b84" />
+    <result column="a165b80" jdbcType="INTEGER" property="a165b80" />
+    <result column="a160b100" jdbcType="INTEGER" property="a160b100" />
+    <result column="a160b96" jdbcType="INTEGER" property="a160b96" />
+    <result column="a160b92" jdbcType="INTEGER" property="a160b92" />
+    <result column="a160b88" jdbcType="INTEGER" property="a160b88" />
+    <result column="a160b84" jdbcType="INTEGER" property="a160b84" />
+    <result column="a160b80" jdbcType="INTEGER" property="a160b80" />
+    <result column="a160b76" jdbcType="INTEGER" property="a160b76" />
+    <result column="a155b96" jdbcType="INTEGER" property="a155b96" />
+    <result column="a155b92" jdbcType="INTEGER" property="a155b92" />
+    <result column="a155b88" jdbcType="INTEGER" property="a155b88" />
+    <result column="a155b84" jdbcType="INTEGER" property="a155b84" />
+    <result column="a155b80" jdbcType="INTEGER" property="a155b80" />
+    <result column="a155b76" jdbcType="INTEGER" property="a155b76" />
+  </resultMap>
+</mapper>

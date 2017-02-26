@@ -1,0 +1,132 @@
+@CHARSET "UTF-8";
+
+/*按钮*/
+.toolBar {
+	height: 35px;
+	background: url('../images/button/btn_bg.gif') 0px -2px repeat-x;
+	text-indent: 5px;
+}
+
+.bottomBar {
+	height: 45px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px #bac7d2 solid;
+	line-height: 45px;
+	background-color: #ffffff;
+}
+
+.toolBar label {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.btn {
+	height: 35px;
+	line-height: 32px;
+	border-style: none;
+	cursor: pointer;
+	font-size: 14px/35px;
+	font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+}
+
+.btn82 {
+	width: 82px;
+	text-align: left;
+	padding-left: 35px;
+}
+
+.btn_add {
+	background: url('../images/button/btn_add.gif') 0px -2px no-repeat;
+}
+
+.btn_add:hover {
+	background: url('../images/button/btn_add_hover.gif') 0px -2px no-repeat;
+	color: #fff;
+}
+
+.btn_del {
+	background: url('../images/button/btn_del.gif') 0px -2px no-repeat;
+}
+
+.btn_del:hover {
+	background: url('../images/button/btn_del_hover.gif') 0px -2px no-repeat;
+	color: #fff;
+}
+
+.btn_res {
+	background: url('../images/button/btn_res.png') 0px -2px no-repeat;
+}
+
+.btn_res:hover {
+	background: url('../images/button/btn_res_hover.png') 0px -2px no-repeat;
+	color: #fff;
+}
+
+.btn_search {
+	background: url('../images/button/btn_search.gif') 0px -2px no-repeat;
+}
+
+.btn_search:hover {
+	background: url('../images/button/btn_search_hover.gif') 0px -2px
+		no-repeat;
+	color: #fff;
+}
+
+.btn_save {
+	background: url('../images/button/btn_save.gif') 0px -2px no-repeat;
+}
+
+.btn_save:hover {
+	background: url('../images/button/btn_save_hover.gif') 0px -2px
+		no-repeat;
+	color: #fff;
+}
+
+.btn_back {
+	background: url('../images/button/btn_back.gif') 0px -2px no-repeat;
+}
+
+.btn_back:hover {
+	background: url('../images/button/btn_back_hover.gif') 0px -2px no-repeat;
+	color: #fff;
+}
+
+.btn_save_bottom {
+	background: url('../images/button/btn_save.gif') 0px 0px no-repeat;
+}
+
+.btn_save_bottom:hover {
+	background: url('../images/button/btn_save_hover.gif') 0px 0px no-repeat;
+	color: #fff;
+}
+
+.btn_close {
+	background: url('../images/button/btn_del.gif') 0px 0px no-repeat;
+}
+
+.btn_close:hover {
+	background: url('../images/button/btn_del_hover.gif') 0px 0px no-repeat;
+	color: #fff;
+}
+
+.btn_config {
+	background: url('../images/button/btn_config.gif') 0px -2px no-repeat;
+}
+
+.btn_config:hover {
+	background: url('../images/button/btn_config_hover.gif') 0px -2px
+		no-repeat;
+	color: #fff;
+}
+
+.search_input {
+	border: 1px solid #bac7d2;
+	background: #f7fcfe; /* #f7fcfe #f3fafd*/
+	border-radius: 2px;
+	box-shadow: 2px 2px 2px #e7f1f7 inset;
+	height: 30px;
+	width: 360px;
+	text-indent: 5px;
+}

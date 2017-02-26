@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.LoadedTypeMapper">
+	<!-- loadedtype表的映射 -->
+	<resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.LoadedType">
+		<!-- WARNING - @mbggenerated -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="loadedTypeName" jdbcType="VARCHAR" property="loadedtypename" />
+		<result column="loadedSizeId" jdbcType="INTEGER" property="loadedsizeid" />
+		<result column="loadedTypeState" jdbcType="VARCHAR" property="loadedtypestate" />
+	</resultMap>
+	<!-- loadedtype表，loadedname表，loadedsize表的关联映射 -->
+	<resultMap id="queryForListMap" type="com.pumpkin.aloaded.dao.model.LoadedType">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="loadedTypeName" jdbcType="VARCHAR" property="loadedtypename" />
+		<result column="loadedSizeId" jdbcType="INTEGER" property="loadedsizeid" />
+		<result column="loadedTypeState" jdbcType="VARCHAR" property="loadedtypestate" />
+	<!-- columnprefix表示在userResultMap里的column全都加上prefix,以跟select语句里column label的匹配 -->
+		<association property="loadedSize" resultMap="LoadedSizeResult" columnPrefix="s_"></association>
+			
+		<collection property="loadedNames" javaType="java.util.List" ofType="com.pumpkin.aloaded.dao.model.LoadedName" columnPrefix="n_">
+			<id column="id" jdbcType="INTEGER" property="id" />
+			<result column="loadedName" jdbcType="VARCHAR" property="loadedname" />
+			<result column="loadedNameState" jdbcType="VARCHAR" property="loadednamestate" />
+		</collection>
+	</resultMap>
+
+	<resultMap id="LoadedSizeResult" type="com.pumpkin.aloaded.dao.model.LoadedSize">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="loadedSizeName" jdbcType="VARCHAR" property="loadedsizename" />
+		<result column="loadedSizeList" jdbcType="VARCHAR" property="loadedsizelist" />
+		<result column="loadedSizeState" jdbcType="VARCHAR" property="loadedsizestate" />
+	</resultMap>
+
+	<!-- 根据被装类型的id联合查询被装型号表 -->
+	<select id="getLoadedSize" parameterType="int" resultMap="queryForListMap">
+		select 
+		t.*,s.id as s_id,s.loadedSizeList as s_loadedSizeList,s.loadedSizeName as s_loadedSizeName,s.loadedSizeState as s_loadedSizeState,n.id as n_id,n.loadedName as n_loadedName,n.loadedNameState as n_loadedNameState,n.loadedTypeId as n_loadedTypeId
+		from 
+		loadedtype t,loadedsize s,loadedname n 
+		where 
+		t.loadedSizeId = s.id and t.id = n.loadedTypeId  and t.id=#{id}
+	</select>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pumpkin.aloaded.dao.mapper.XieziMapper">
+  <resultMap id="BaseResultMap" type="com.pumpkin.aloaded.dao.model.Xiezi">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="clothesname" jdbcType="VARCHAR" property="clothesname" />
+    <result column="clothesnum" jdbcType="INTEGER" property="clothesnum" />
+    <result column="a240" jdbcType="INTEGER" property="a240" />
+    <result column="a245" jdbcType="INTEGER" property="a245" />
+    <result column="a250" jdbcType="INTEGER" property="a250" />
+    <result column="a255" jdbcType="INTEGER" property="a255" />
+    <result column="a260" jdbcType="INTEGER" property="a260" />
+    <result column="a265" jdbcType="INTEGER" property="a265" />
+    <result column="a270" jdbcType="INTEGER" property="a270" />
+    <result column="a275" jdbcType="INTEGER" property="a275" />
+    <result column="a280" jdbcType="INTEGER" property="a280" />
+    <result column="a285" jdbcType="INTEGER" property="a285" />
+    <result column="a290" jdbcType="INTEGER" property="a290" />
+  </resultMap>
+</mapper>
